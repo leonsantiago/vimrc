@@ -8,9 +8,10 @@ set guifont=ProggyCleanTT\ 12
 " THEME COLOR
 " colorscheme gruvbox
 " colorscheme distinguished
-colorscheme rigel
+colorscheme gruvbox
 
 set termguicolors
+set background=dark
 set wildmenu " Display command line's tab complete options
 
 " SINTASTIC CONFIG
@@ -43,7 +44,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:airline_theme='oceanicnext'
+let g:airline_theme='base16_gruvbox_light_hard'
 
 "END SYNTASTIC CONFIG "
 
@@ -57,6 +58,7 @@ endif
 
 " REMAPS
 nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-p> :Files<CR> 
 nnoremap <C-b> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 nnoremap <F8> :TagbarToggle<CR>
@@ -75,11 +77,14 @@ call vundle#begin()
  Plugin 'VundleVim/Vundle.vim'
  Plugin 'tpope/vim-rails'
  Plugin 'vim-ruby/vim-ruby'
- Plugin 'kien/ctrlp.vim'
+ " Plugin 'kien/ctrlp.vim'
+ Plugin 'junegunn/fzf'
+ Plugin 'junegunn/fzf.vim'
  Plugin 'preservim/nerdtree'
  Plugin 'airblade/vim-gitgutter'
  Plugin 'vim-airline/vim-airline'
  Plugin 'vim-airline/vim-airline-themes'
+ Plugin 'voldikss/vim-floaterm'
  " Plugin 'vim-syntastic/syntastic'
  Plugin 'ryanoasis/vim-devicons'
  Plugin 'preservim/tagbar'
